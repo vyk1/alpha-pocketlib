@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+    <script src="./js/Chart.min.js"></script>
+    <title>Gerenciamento de leituras</title>
+</head>
+
+<body>
+
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s4">
+                    <input placeholder="adicionando..." type="text" disabled name="id" id="id">
+                    <label for="disabled">Disabled</label>
+                </div>
+                <div class="input-field col s12" id="graph">
+                    <p>Gráfico:</p>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="input-field col s12">
+                    <input id="nome" type="text" class="col s5 validate">
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="input-field col s12">
+                    <select class="col s5 browser-default" id="categoria">
+                    </select>
+                </div>
+                <div class="input-field col s12">
+                    <input id="qtdpg" type="number" class="col s3 validate">
+                    <label for="qtdpg">Qtd de Páginas que o livro tem</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="qtdpglida" type="number" class="col s3 validate">
+                    <label for="qtdpglida">Qtd de Páginas que já foram lidas</label>
+                </div>
+                <div class="input-field col s12">
+                    <input type="button" name="addBtn" value="Adicionar" id="addBtn" />
+                    <input type="button" name="listarBtn" value="Listar" id="listarBtn" />
+                    <input type="button" name="addCategoriaBtn" value="Cadastrar Categoria" id="addCategoriaBtn" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <table id="table" class="highlight"></table>
+    <script type="module" src="app.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+</body>
+<script></script>
+<!-- <script type="module" src="livro.js"></script> -->
+
+</html>
